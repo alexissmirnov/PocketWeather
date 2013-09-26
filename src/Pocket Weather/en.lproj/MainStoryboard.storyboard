@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="4">
+    <dependencies>
+        <deployment defaultVersion="1552" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+    </dependencies>
+    <scenes>
+        <!--Today View Controller - First-->
+        <scene sceneID="11">
+            <objects>
+                <viewController storyboardIdentifier="todayViewController" title="First" useStoryboardIdentifierAsRestorationIdentifier="YES" id="2" customClass="PWTodayViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="16">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" image="clear-day-background.png" id="RFn-Hc-itn">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Location" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" id="20">
+                                <rect key="frame" x="20" y="23" width="280" height="43"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="36"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" hidesWhenStopped="YES" style="gray" id="b0d-Wa-jCq">
+                                <rect key="frame" x="150" y="525" width="20" height="20"/>
+                            </activityIndicatorView>
+                            <view contentMode="scaleToFill" id="4jn-HJ-WD7">
+                                <rect key="frame" x="20" y="83" width="280" height="214"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Temp" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="QlZ-fO-0SX">
+                                        <rect key="frame" x="127" y="57" width="133" height="21"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Oct 1, 2013" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="oSb-RT-Gcq">
+                                        <rect key="frame" x="21" y="5" width="239" height="15"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="13"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="High" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="oYY-N9-JLE">
+                                        <rect key="frame" x="127" y="86" width="132" height="21"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Low" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="v7G-EN-xQp">
+                                        <rect key="frame" x="127" y="115" width="133" height="21"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Humidity" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7M7-1t-d3E">
+                                        <rect key="frame" x="127" y="173" width="132" height="21"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="tile-sunny.png" id="QZ5-7h-JR9">
+                                        <rect key="frame" x="19" y="57" width="100" height="100"/>
+                                    </imageView>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Wind" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hr3-Vs-OUF">
+                                        <rect key="frame" x="127" y="144" width="132" height="21"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="SKY IS CLEAR" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vV4-E5-2eP">
+                                        <rect key="frame" x="20" y="21" width="240" height="28"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="22"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="0.25" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Today" image="today.png" id="7"/>
+                    <connections>
+                        <outlet property="backgroundImageView" destination="RFn-Hc-itn" id="HTt-7l-u1G"/>
+                        <outlet property="conditionImageView" destination="QZ5-7h-JR9" id="L4P-ip-xcl"/>
+                        <outlet property="conditionsLabel" destination="vV4-E5-2eP" id="wN6-Wm-IYl"/>
+                        <outlet property="container" destination="4jn-HJ-WD7" id="TWJ-Ry-zYu"/>
+                        <outlet property="dateLabel" destination="oSb-RT-Gcq" id="QXN-Ns-lKi"/>
+                        <outlet property="humidityLabel" destination="7M7-1t-d3E" id="MiV-4O-2ym"/>
+                        <outlet property="loadingActivityIndicator" destination="b0d-Wa-jCq" id="5ZP-Iw-vVI"/>
+                        <outlet property="locationLabel" destination="20" id="Qjn-sf-tLv"/>
+                        <outlet property="tempatureHighLabel" destination="oYY-N9-JLE" id="36C-Zy-IaZ"/>
+                        <outlet property="tempatureLabel" destination="QlZ-fO-0SX" id="DMS-FZ-JFS"/>
+                        <outlet property="tempatureLowLabel" destination="v7G-EN-xQp" id="zi7-9V-uba"/>
+                        <outlet property="windLabel" destination="hr3-Vs-OUF" id="ycU-U4-bNM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="10" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="619" y="-130"/>
+        </scene>
+        <!--Settings View Controller - Settings-->
+        <scene sceneID="3XU-fe-FfN">
+            <objects>
+                <viewController id="51V-5E-U11" customClass="PWSettingsViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Cz7-RM-VBm">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" image="clear-day-background.png" id="0SR-QS-7uM">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Location" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" id="paZ-4M-53v">
+                                <rect key="frame" x="20" y="23" width="280" height="43"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="36"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ZIP Code" minimumFontSize="17" id="vqW-DA-BFb">
+                                <rect key="frame" x="20" y="87" width="280" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Bob-Xd-nc4">
+                                <rect key="frame" x="20" y="142" width="280" height="44"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                <state key="normal" title="Save">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="saveTapped:" destination="51V-5E-U11" eventType="touchUpInside" id="wLo-r7-j3I"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" id="JxO-4R-bnn">
+                                <rect key="frame" x="150" y="154" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Settings" image="settings.png" id="01n-eP-IKU"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="JxO-4R-bnn" id="FPS-7C-dnD"/>
+                        <outlet property="backgroundImageView" destination="0SR-QS-7uM" id="mSI-sn-ReW"/>
+                        <outlet property="locationLabel" destination="paZ-4M-53v" id="6Jy-FE-eUB"/>
+                        <outlet property="locationTextField" destination="vqW-DA-BFb" id="txu-EZ-74e"/>
+                        <outlet property="saveButton" destination="Bob-Xd-nc4" id="NhY-v8-xvJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eeh-D0-pFi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="619" y="1244"/>
+        </scene>
+        <!--Forecast View Controller - Second-->
+        <scene sceneID="13">
+            <objects>
+                <viewController title="Second" id="3" customClass="PWForecastViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="17">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" image="clear-day-background.png" id="5Np-C5-fDN">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Location" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" id="dvM-H0-e2r">
+                                <rect key="frame" x="20" y="23" width="280" height="43"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="36"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" hidesWhenStopped="YES" style="gray" id="War-qj-Ycw">
+                                <rect key="frame" x="150" y="525" width="20" height="20"/>
+                            </activityIndicatorView>
+                            <view contentMode="scaleToFill" id="cKC-Wi-4Dg">
+                                <rect key="frame" x="20" y="83" width="280" height="284"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" id="HfD-Zb-owP">
+                                        <rect key="frame" x="0.0" y="0.0" width="135" height="128"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="tile-thunder-storm.png" id="U5X-as-SEk">
+                                                <rect key="frame" x="11" y="39" width="50" height="50"/>
+                                            </imageView>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Date" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4ei-WT-SI8">
+                                                <rect key="frame" x="11" y="10" width="118" height="21"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="High" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="leO-M3-8ui">
+                                                <rect key="frame" x="69" y="39" width="60" height="21"/>
+                                                <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Low" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1ZJ-W6-BPG">
+                                                <rect key="frame" x="69" y="68" width="60" height="21"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Conditions" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="MKW-9H-8C3">
+                                                <rect key="frame" x="11" y="97" width="118" height="21"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="12"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="0.25" colorSpace="calibratedRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" id="vlQ-vI-IeZ">
+                                        <rect key="frame" x="144" y="0.0" width="135" height="128"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="tile-thunder-storm.png" id="M5v-s2-skA">
+                                                <rect key="frame" x="11" y="39" width="50" height="50"/>
+                                            </imageView>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Date" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="tCF-m5-oSY">
+                                                <rect key="frame" x="11" y="10" width="118" height="21"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="High" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hsM-PY-VAa">
+                                                <rect key="frame" x="69" y="39" width="60" height="21"/>
+                                                <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Low" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="yAb-Ig-S0t">
+                                                <rect key="frame" x="69" y="68" width="60" height="21"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Conditions" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4cT-6p-Bk4">
+                                                <rect key="frame" x="11" y="97" width="118" height="21"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="12"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="0.25" colorSpace="calibratedRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" id="JFM-X7-hkA">
+                                        <rect key="frame" x="0.0" y="136" width="135" height="128"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="tile-thunder-storm.png" id="3fs-X2-8Be">
+                                                <rect key="frame" x="11" y="39" width="50" height="50"/>
+                                            </imageView>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Date" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="OoV-I8-Yen">
+                                                <rect key="frame" x="11" y="10" width="118" height="21"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="High" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="TWq-Uu-Mr4">
+                                                <rect key="frame" x="69" y="39" width="60" height="21"/>
+                                                <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Low" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="WtH-Sl-vdf">
+                                                <rect key="frame" x="69" y="68" width="60" height="21"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Conditions" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="cEV-8h-HyJ">
+                                                <rect key="frame" x="11" y="97" width="118" height="21"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="12"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="0.25" colorSpace="calibratedRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" id="Kyi-7M-sU4">
+                                        <rect key="frame" x="143" y="136" width="135" height="128"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="tile-thunder-storm.png" id="bDJ-rd-VZR">
+                                                <rect key="frame" x="11" y="39" width="50" height="50"/>
+                                            </imageView>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Date" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ogB-0c-wui">
+                                                <rect key="frame" x="11" y="10" width="118" height="21"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="High" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Tvq-1P-CHS">
+                                                <rect key="frame" x="69" y="39" width="60" height="21"/>
+                                                <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Low" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="mYF-c4-kyj">
+                                                <rect key="frame" x="69" y="68" width="60" height="21"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Conditions" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="stD-je-4fJ">
+                                                <rect key="frame" x="11" y="97" width="118" height="21"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="12"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="0.25" colorSpace="calibratedRGB"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Forecast" image="forecast.png" id="6"/>
+                    <connections>
+                        <outlet property="backgroundImageView" destination="5Np-C5-fDN" id="XVq-Y6-7rG"/>
+                        <outlet property="condition1Image" destination="U5X-as-SEk" id="hSV-FN-jUg"/>
+                        <outlet property="condition2Image" destination="M5v-s2-skA" id="9mW-G4-yHx"/>
+                        <outlet property="condition3Image" destination="3fs-X2-8Be" id="wQh-xG-cDA"/>
+                        <outlet property="condition4Image" destination="bDJ-rd-VZR" id="Ug7-cS-Czc"/>
+                        <outlet property="conditions1Label" destination="MKW-9H-8C3" id="zIK-j5-s8r"/>
+                        <outlet property="conditions2Label" destination="4cT-6p-Bk4" id="9Va-R4-7sC"/>
+                        <outlet property="conditions3Label" destination="cEV-8h-HyJ" id="Zry-Hh-OWk"/>
+                        <outlet property="conditions4Label" destination="stD-je-4fJ" id="G97-qi-0Hh"/>
+                        <outlet property="container1View" destination="HfD-Zb-owP" id="Eks-2n-e4I"/>
+                        <outlet property="container2View" destination="vlQ-vI-IeZ" id="odq-c6-uo3"/>
+                        <outlet property="container3View" destination="JFM-X7-hkA" id="Ujg-Zw-uCD"/>
+                        <outlet property="container4View" destination="Kyi-7M-sU4" id="m8l-31-YB1"/>
+                        <outlet property="date1Label" destination="4ei-WT-SI8" id="D6c-yR-ap3"/>
+                        <outlet property="date2Label" destination="tCF-m5-oSY" id="aLj-JY-wVd"/>
+                        <outlet property="date3Label" destination="OoV-I8-Yen" id="mwz-nn-2cf"/>
+                        <outlet property="date4Label" destination="ogB-0c-wui" id="Blw-6b-3XM"/>
+                        <outlet property="loadingActivityIndicator" destination="War-qj-Ycw" id="Owf-9Z-V7b"/>
+                        <outlet property="locationLabel" destination="dvM-H0-e2r" id="Ao8-6i-gdk"/>
+                        <outlet property="tempatureHigh1Label" destination="leO-M3-8ui" id="3BK-ch-8h4"/>
+                        <outlet property="tempatureHigh2Label" destination="hsM-PY-VAa" id="hC6-iY-lgP"/>
+                        <outlet property="tempatureHigh3Label" destination="TWq-Uu-Mr4" id="YDL-J0-IOc"/>
+                        <outlet property="tempatureHigh4Label" destination="Tvq-1P-CHS" id="iJh-yf-err"/>
+                        <outlet property="tempatureLow1Label" destination="1ZJ-W6-BPG" id="fdy-nI-ROm"/>
+                        <outlet property="tempatureLow2Label" destination="yAb-Ig-S0t" id="Pv3-Ly-RTP"/>
+                        <outlet property="tempatureLow3Label" destination="WtH-Sl-vdf" id="LAI-rb-JAP"/>
+                        <outlet property="tempatureLow4Label" destination="mYF-c4-kyj" id="yJO-AA-Ccx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="12" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="619" y="543"/>
+        </scene>
+        <!--Menu View Controller-->
+        <scene sceneID="15">
+            <objects>
+                <tabBarController modalTransitionStyle="crossDissolve" id="4" customClass="PWMenuViewController" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleAspectFill" itemPositioning="fill" id="5">
+                        <rect key="frame" x="0.0" y="431" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="selectedImageTintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="2" kind="relationship" relationship="viewControllers" id="26"/>
+                        <segue destination="3" kind="relationship" relationship="viewControllers" id="27"/>
+                        <segue destination="51V-5E-U11" kind="relationship" relationship="viewControllers" id="kRo-JH-dml"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="14" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-99" y="543"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="clear-day-background.png" width="1791" height="800"/>
+        <image name="forecast.png" width="30" height="30"/>
+        <image name="settings.png" width="26" height="28"/>
+        <image name="tile-sunny.png" width="172" height="172"/>
+        <image name="tile-thunder-storm.png" width="172" height="172"/>
+        <image name="today.png" width="30" height="30"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
