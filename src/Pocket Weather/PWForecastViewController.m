@@ -18,6 +18,7 @@
 @property (strong, nonatomic) PWWeatherModel* weatherModel;
 @property (strong, nonatomic) PWSettingsModel* settingsModel;
 @property (weak, nonatomic) IBOutlet UIImageView *backgroundImageView;
+@property (weak, nonatomic) IBOutlet UIImageView *appsAmuck;
 @property (weak, nonatomic) IBOutlet UILabel *locationLabel;
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *loadingActivityIndicator;
 
@@ -68,6 +69,16 @@
     if(self.weatherModel.isLoading) {
         [self.loadingActivityIndicator startAnimating];
     }
+    
+    UITapGestureRecognizer * tapGestureRecognizer = [[UITapGestureRecognizer alloc] init];
+    [tapGestureRecognizer addTarget:self action:@selector(openWebSite)];
+    [tapGestureRecognizer setNumberOfTapsRequired:1];
+    [self.appsAmuck addGestureRecognizer:tapGestureRecognizer];
+}
+
+- (void)openWebSite
+{
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://www.appsamuck.com/"]];
 }
 
 -(void)weatherChanged:(id)sender {

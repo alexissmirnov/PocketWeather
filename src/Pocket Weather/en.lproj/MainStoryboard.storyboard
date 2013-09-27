@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="4">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="12F37" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="4">
     <dependencies>
         <deployment defaultVersion="1552" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
@@ -77,11 +77,16 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="0.25" colorSpace="calibratedRGB"/>
                             </view>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="appsamuck.png" id="jIP-Sk-t9v">
+                                <rect key="frame" x="0.0" y="370" width="320" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Today" image="today.png" id="7"/>
                     <connections>
+                        <outlet property="appsAmuck" destination="jIP-Sk-t9v" id="lQN-3R-SH5"/>
                         <outlet property="backgroundImageView" destination="RFn-Hc-itn" id="HTt-7l-u1G"/>
                         <outlet property="conditionImageView" destination="QZ5-7h-JR9" id="L4P-ip-xcl"/>
                         <outlet property="conditionsLabel" destination="vV4-E5-2eP" id="wN6-Wm-IYl"/>
@@ -136,12 +141,17 @@
                                 <rect key="frame" x="150" y="154" width="20" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </activityIndicatorView>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="appsamuck.png" id="AAX-Pn-dBf">
+                                <rect key="frame" x="0.0" y="370" width="320" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Settings" image="settings.png" id="01n-eP-IKU"/>
                     <connections>
                         <outlet property="activityIndicator" destination="JxO-4R-bnn" id="FPS-7C-dnD"/>
+                        <outlet property="appsAmuck" destination="AAX-Pn-dBf" id="ptT-X8-41c"/>
                         <outlet property="backgroundImageView" destination="0SR-QS-7uM" id="mSI-sn-ReW"/>
                         <outlet property="locationLabel" destination="paZ-4M-53v" id="6Jy-FE-eUB"/>
                         <outlet property="locationTextField" destination="vqW-DA-BFb" id="txu-EZ-74e"/>
@@ -311,11 +321,16 @@
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="appsamuck.png" id="Tpy-bz-5pt">
+                                <rect key="frame" x="0.0" y="370" width="320" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Forecast" image="forecast.png" id="6"/>
                     <connections>
+                        <outlet property="appsAmuck" destination="Tpy-bz-5pt" id="61I-Rq-On4"/>
                         <outlet property="backgroundImageView" destination="5Np-C5-fDN" id="XVq-Y6-7rG"/>
                         <outlet property="condition1Image" destination="U5X-as-SEk" id="hSV-FN-jUg"/>
                         <outlet property="condition2Image" destination="M5v-s2-skA" id="9mW-G4-yHx"/>
@@ -372,10 +387,18 @@
         </scene>
     </scenes>
     <resources>
+        <image name="appsamuck.png" width="320" height="62"/>
+        <image name="appsamuck.png" width="320" height="62"/>
+        <image name="appsamuck.png" width="320" height="62"/>
+        <image name="clear-day-background.png" width="1791" height="800"/>
+        <image name="clear-day-background.png" width="1791" height="800"/>
         <image name="clear-day-background.png" width="1791" height="800"/>
         <image name="forecast.png" width="30" height="30"/>
         <image name="settings.png" width="26" height="28"/>
         <image name="tile-sunny.png" width="172" height="172"/>
+        <image name="tile-thunder-storm.png" width="172" height="172"/>
+        <image name="tile-thunder-storm.png" width="172" height="172"/>
+        <image name="tile-thunder-storm.png" width="172" height="172"/>
         <image name="tile-thunder-storm.png" width="172" height="172"/>
         <image name="today.png" width="30" height="30"/>
     </resources>

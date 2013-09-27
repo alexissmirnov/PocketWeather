@@ -16,6 +16,7 @@
 @interface PWSettingsViewController ()
 @property (weak, nonatomic) PWWeatherModel* weatherModel;
 @property (weak, nonatomic) PWSettingsModel* settingsModel;
+@property (weak, nonatomic) IBOutlet UIImageView *appsAmuck;
 @property (weak, nonatomic) IBOutlet UIButton *saveButton;
 @property (weak, nonatomic) IBOutlet UILabel *locationLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *backgroundImageView;
@@ -53,6 +54,16 @@
     self.locationTextField.text = self.settingsModel.location;
     
     [self configureControls];
+
+    UITapGestureRecognizer * tapGestureRecognizer = [[UITapGestureRecognizer alloc] init];
+    [tapGestureRecognizer addTarget:self action:@selector(openWebSite)];
+    [tapGestureRecognizer setNumberOfTapsRequired:1];
+    [self.appsAmuck addGestureRecognizer:tapGestureRecognizer];
+}
+
+- (void)openWebSite
+{
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://www.appsamuck.com/"]];
 }
 
 -(void)weatherChanged:(id)sender {

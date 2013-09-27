@@ -20,6 +20,7 @@
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *loadingActivityIndicator;
 @property (weak, nonatomic) IBOutlet UIImageView *backgroundImageView;
 @property (weak, nonatomic) IBOutlet UIImageView *conditionImageView;
+@property (weak, nonatomic) IBOutlet UIImageView *appsAmuck;
 @property (weak, nonatomic) IBOutlet UILabel *dateLabel;
 @property (weak, nonatomic) IBOutlet UILabel *locationLabel;
 @property (weak, nonatomic) IBOutlet UILabel *conditionsLabel;
@@ -28,6 +29,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *tempatureLabel;
 @property (weak, nonatomic) IBOutlet UILabel *tempatureLowLabel;
 @property (weak, nonatomic) IBOutlet UILabel *tempatureHighLabel;
+
 - (void)weatherChanged:(id)sender;
 - (void)styleControlsForDarkBackground;
 @end
@@ -46,6 +48,16 @@
     if(self.weatherModel.isLoading) {
         [self.loadingActivityIndicator startAnimating];
     }
+    
+    UITapGestureRecognizer * tapGestureRecognizer = [[UITapGestureRecognizer alloc] init];
+    [tapGestureRecognizer addTarget:self action:@selector(openWebSite)];
+    [tapGestureRecognizer setNumberOfTapsRequired:1];
+    [self.appsAmuck addGestureRecognizer:tapGestureRecognizer];
+}
+
+- (void)openWebSite
+{
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://www.appsamuck.com/"]];
 }
 
 -(void)weatherChanged:(id)sender {
