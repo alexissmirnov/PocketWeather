@@ -13,6 +13,9 @@
 		6949715B17E5AB2B00FF00EB /* NSDate+PWExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6949715A17E5AB2B00FF00EB /* NSDate+PWExtensions.m */; };
 		6949715E17E6983000FF00EB /* PWSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6949715D17E6982F00FF00EB /* PWSettingsViewController.m */; };
 		6949716117E6A2E500FF00EB /* PWSettingsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6949716017E6A2E500FF00EB /* PWSettingsModel.m */; };
+		694F109517F5CE2300FE3042 /* code.png in Resources */ = {isa = PBXBuildFile; fileRef = 694F109317F5CE2300FE3042 /* code.png */; };
+		694F109617F5CE2300FE3042 /* code@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 694F109417F5CE2300FE3042 /* code@2x.png */; };
+		694F109917F5CE9500FE3042 /* PWCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 694F109817F5CE9500FE3042 /* PWCodeViewController.m */; };
 		695786FC17E0FBF400078095 /* PWWeatherModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 695786FB17E0FBF400078095 /* PWWeatherModel.m */; };
 		699C000017E2C2520040FA70 /* snowy-day-background.png in Resources */ = {isa = PBXBuildFile; fileRef = 699CFFE117E2C2520040FA70 /* snowy-day-background.png */; };
 		699C000117E2C2520040FA70 /* snowy-night-background.png in Resources */ = {isa = PBXBuildFile; fileRef = 699CFFE217E2C2520040FA70 /* snowy-night-background.png */; };
@@ -46,7 +49,6 @@
 		699CFFFE17E2C2520040FA70 /* rainy-day-background.png in Resources */ = {isa = PBXBuildFile; fileRef = 699CFFDF17E2C2520040FA70 /* rainy-day-background.png */; };
 		699CFFFF17E2C2520040FA70 /* rainy-night-background.png in Resources */ = {isa = PBXBuildFile; fileRef = 699CFFE017E2C2520040FA70 /* rainy-night-background.png */; };
 		69C4B30817F33E09003E6E21 /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 69C4B30717F33E09003E6E21 /* settings.png */; };
-		69C4B30B17F348AF003E6E21 /* PWMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69C4B30A17F348AF003E6E21 /* PWMenuViewController.m */; };
 		A41955AC17D4F9C60056F3B3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A41955AB17D4F9C60056F3B3 /* UIKit.framework */; };
 		A41955AE17D4F9C60056F3B3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A41955AD17D4F9C60056F3B3 /* Foundation.framework */; };
 		A41955B017D4F9C60056F3B3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A41955AF17D4F9C60056F3B3 /* CoreGraphics.framework */; };
@@ -81,6 +83,10 @@
 		6949715D17E6982F00FF00EB /* PWSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PWSettingsViewController.m; sourceTree = "<group>"; };
 		6949715F17E6A2E500FF00EB /* PWSettingsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PWSettingsModel.h; sourceTree = "<group>"; };
 		6949716017E6A2E500FF00EB /* PWSettingsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PWSettingsModel.m; sourceTree = "<group>"; };
+		694F109317F5CE2300FE3042 /* code.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = code.png; sourceTree = "<group>"; };
+		694F109417F5CE2300FE3042 /* code@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "code@2x.png"; sourceTree = "<group>"; };
+		694F109717F5CE9500FE3042 /* PWCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PWCodeViewController.h; sourceTree = "<group>"; };
+		694F109817F5CE9500FE3042 /* PWCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PWCodeViewController.m; sourceTree = "<group>"; };
 		695786FA17E0FBF400078095 /* PWWeatherModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PWWeatherModel.h; sourceTree = "<group>"; };
 		695786FB17E0FBF400078095 /* PWWeatherModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PWWeatherModel.m; sourceTree = "<group>"; };
 		699CFFC517E2C2520040FA70 /* tile-chance-of-rain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tile-chance-of-rain.png"; sourceTree = "<group>"; };
@@ -115,8 +121,6 @@
 		699CFFE317E2C2520040FA70 /* stormy-day-background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "stormy-day-background.png"; sourceTree = "<group>"; };
 		699CFFE417E2C2520040FA70 /* stormy-night-background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "stormy-night-background.png"; sourceTree = "<group>"; };
 		69C4B30717F33E09003E6E21 /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings.png; sourceTree = "<group>"; };
-		69C4B30917F348AF003E6E21 /* PWMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PWMenuViewController.h; sourceTree = "<group>"; };
-		69C4B30A17F348AF003E6E21 /* PWMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PWMenuViewController.m; sourceTree = "<group>"; };
 		A41955A817D4F9C60056F3B3 /* Weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Weather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A41955AB17D4F9C60056F3B3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A41955AD17D4F9C60056F3B3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -255,14 +259,16 @@
 				A41955C317D4F9C60056F3B3 /* MainStoryboard.storyboard */,
 				A41955BA17D4F9C60056F3B3 /* PWAppDelegate.h */,
 				A41955BB17D4F9C60056F3B3 /* PWAppDelegate.m */,
-				A47D873C17D5069A00E5886C /* PWForecastViewController.h */,
-				A47D873D17D5069A00E5886C /* PWForecastViewController.m */,
 				A47D873917D505F600E5886C /* PWTodayViewController.h */,
 				A47D873A17D505F600E5886C /* PWTodayViewController.m */,
-				695786FA17E0FBF400078095 /* PWWeatherModel.h */,
-				695786FB17E0FBF400078095 /* PWWeatherModel.m */,
+				A47D873C17D5069A00E5886C /* PWForecastViewController.h */,
+				A47D873D17D5069A00E5886C /* PWForecastViewController.m */,
 				6949715C17E6982F00FF00EB /* PWSettingsViewController.h */,
 				6949715D17E6982F00FF00EB /* PWSettingsViewController.m */,
+				694F109717F5CE9500FE3042 /* PWCodeViewController.h */,
+				694F109817F5CE9500FE3042 /* PWCodeViewController.m */,
+				695786FA17E0FBF400078095 /* PWWeatherModel.h */,
+				695786FB17E0FBF400078095 /* PWWeatherModel.m */,
 				6949715F17E6A2E500FF00EB /* PWSettingsModel.h */,
 				6949716017E6A2E500FF00EB /* PWSettingsModel.m */,
 			);
@@ -279,8 +285,6 @@
 				A41955B717D4F9C60056F3B3 /* main.m */,
 				A41955B317D4F9C60056F3B3 /* Pocket Weather-Info.plist */,
 				A41955B917D4F9C60056F3B3 /* Pocket Weather-Prefix.pch */,
-				69C4B30917F348AF003E6E21 /* PWMenuViewController.h */,
-				69C4B30A17F348AF003E6E21 /* PWMenuViewController.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -292,13 +296,15 @@
 				699CFFC417E2C2520040FA70 /* icons */,
 				A42B881B17F53D47004A5979 /* appsamuck.png */,
 				A42B881C17F53D47004A5979 /* appsamuck@2x.png */,
-				69C4B30717F33E09003E6E21 /* settings.png */,
-				A47D873117D5031100E5886C /* forecast.png */,
-				A47D873217D5031100E5886C /* forecast@2x.png */,
 				A421490A17DBA7C80088671D /* Icon.png */,
 				A421490C17DBA7CE0088671D /* Icon@2x.png */,
+				A47D873117D5031100E5886C /* forecast.png */,
+				A47D873217D5031100E5886C /* forecast@2x.png */,
 				A47D873317D5031100E5886C /* today.png */,
 				A47D873417D5031100E5886C /* today@2x.png */,
+				69C4B30717F33E09003E6E21 /* settings.png */,
+				694F109317F5CE2300FE3042 /* code.png */,
+				694F109417F5CE2300FE3042 /* code@2x.png */,
 			);
 			path = images;
 			sourceTree = "<group>";
@@ -379,6 +385,7 @@
 				699CFFEF17E2C2520040FA70 /* tile-mist.png in Resources */,
 				699CFFF017E2C2520040FA70 /* tile-mostly-cloudy.png in Resources */,
 				699CFFF117E2C2520040FA70 /* tile-mostly-sunny.png in Resources */,
+				694F109517F5CE2300FE3042 /* code.png in Resources */,
 				699CFFF217E2C2520040FA70 /* tile-partly-cloudy.png in Resources */,
 				699CFFF317E2C2520040FA70 /* tile-rain.png in Resources */,
 				699CFFF417E2C2520040FA70 /* tile-sleet.png in Resources */,
@@ -387,6 +394,7 @@
 				A42B881D17F53D47004A5979 /* appsamuck.png in Resources */,
 				699CFFF717E2C2520040FA70 /* tile-storm.png in Resources */,
 				699CFFF817E2C2520040FA70 /* tile-sunny.png in Resources */,
+				694F109617F5CE2300FE3042 /* code@2x.png in Resources */,
 				699CFFF917E2C2520040FA70 /* tile-thunder-storm.png in Resources */,
 				A42B881E17F53D47004A5979 /* appsamuck@2x.png in Resources */,
 				699CFFFA17E2C2520040FA70 /* clear-day-background.png in Resources */,
@@ -412,12 +420,12 @@
 			files = (
 				A41955B817D4F9C60056F3B3 /* main.m in Sources */,
 				A41955BC17D4F9C60056F3B3 /* PWAppDelegate.m in Sources */,
+				694F109917F5CE9500FE3042 /* PWCodeViewController.m in Sources */,
 				A47D873B17D505F600E5886C /* PWTodayViewController.m in Sources */,
 				A47D873E17D5069A00E5886C /* PWForecastViewController.m in Sources */,
 				695786FC17E0FBF400078095 /* PWWeatherModel.m in Sources */,
 				6949715517E3D0EC00FF00EB /* UIView+PWExtensions.m in Sources */,
 				6949715817E3D28500FF00EB /* PWHelper.m in Sources */,
-				69C4B30B17F348AF003E6E21 /* PWMenuViewController.m in Sources */,
 				6949715B17E5AB2B00FF00EB /* NSDate+PWExtensions.m in Sources */,
 				6949715E17E6983000FF00EB /* PWSettingsViewController.m in Sources */,
 				6949716117E6A2E500FF00EB /* PWSettingsModel.m in Sources */,
