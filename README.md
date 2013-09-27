@@ -6,6 +6,8 @@ Whether you are interested in the weather for today, tomorrow, or the rest of th
 
 Pocket Weather is the like a Weather Hub for iPhone.
 
+Download the source code for Pocket Weather as a zip file [here](https://github.com/AppsAmuck/PocketWeather/archive/master.zip).
+
 ![Pocket Weather](http://www.touchality.com/images/kickstarter/pocketweatherSmall01.png) . ![Pocket Weather](http://www.touchality.com/images/kickstarter/pocketweatherSmall05.png)
 
 ### The AppsAmuck Project
