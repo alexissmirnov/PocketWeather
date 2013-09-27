@@ -2,7 +2,7 @@ PocketWeather
 =============
 
 Pocket Weather provides detailed weather information for your selected location designed specifically for iPhone. 
-Wheather you are interested in the weather for today, tomorrow, or the rest of the week Pocket Weather has you covered.
+Whether you are interested in the weather for today, tomorrow, or the rest of the week Pocket Weather has you covered.
 
 Pocket Weather is the like a Weather Hub for iPhone.
 
