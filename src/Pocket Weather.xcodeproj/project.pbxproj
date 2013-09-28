@@ -525,7 +525,7 @@
 		A41955D817D4F9C60056F3B3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: James McElveen (DFYJ9CJ6C2)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Pocket Weather/Pocket Weather-Prefix.pch";
 				INFOPLIST_FILE = "Pocket Weather/Pocket Weather-Info.plist";
