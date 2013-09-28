@@ -5,6 +5,7 @@
 //  Created by Jamey McElveen on 9/15/13.
 //  Copyright (c) 2013 AppsAmuck. All rights reserved.
 //
+//  This is the settings view controller that manages settings page
 
 #import "PWSettingsViewController.h"
 #import "PWWeatherModel.h"
@@ -61,6 +62,7 @@
     [self.appsAmuck addGestureRecognizer:tapGestureRecognizer];
 }
 
+// this method will open the AppsAmuck web site
 - (void)openWebSite
 {
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://www.appsamuck.com/"]];
@@ -70,6 +72,7 @@
     [self configureControls];
 }
 
+// updated the user interface controls
 - (void)configureControls {
     
     [self.activityIndicator stopAnimating];
@@ -96,6 +99,7 @@
     }];
 }
 
+// it's night make sure we can read the text :D
 - (void)styleControlsForDarkBackground {
     for (UILabel *label in [self.view subviewsWithClass:[UILabel class]]) {
         label.textColor = [UIColor whiteColor];

@@ -5,6 +5,7 @@
 //  Created by Chris Craft on 9/2/13.
 //  Copyright (c) 2013 AppsAmuck. All rights reserved.
 //
+//  This is the today controller that manages forecast page
 
 #import "PWTodayViewController.h"
 #import "PWSettingsModel.h"
@@ -55,6 +56,7 @@
     [self.appsAmuck addGestureRecognizer:tapGestureRecognizer];
 }
 
+// this method will open the AppsAmuck web site
 - (void)openWebSite
 {
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://www.appsamuck.com/"]];
@@ -71,6 +73,7 @@
     [super didReceiveMemoryWarning];
 }
 
+// updated the user interface controls
 - (void)updateControls {
     if (!self.weatherModel.lastUpdated) {
         return;
@@ -98,6 +101,7 @@
 
 }
 
+// it's night make sure we can read the text :D
 - (void)styleControlsForDarkBackground {
     for (UILabel *label in [self.view subviewsWithClass:[UILabel class]]) {
         label.textColor = [UIColor whiteColor];

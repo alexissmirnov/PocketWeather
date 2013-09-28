@@ -5,10 +5,12 @@
 //  Created by Jamey McElveen on 9/11/13.
 //  Copyright (c) 2013 AppsAmuck. All rights reserved.
 //
+//  This is the weather model which stores weather information related to the user's location
 
 #import "PWWeatherModel.h"
 #import "PWSettingsModel.h"
 
+// URL to Open Weather Map's API
 #define OPEN_WEATHER_ENDPOINT @"http://api.openweathermap.org/data/2.5/forecast/daily?q=%@&cnt=7&units=imperial"
 
 @interface PWWeatherModel ()
@@ -32,6 +34,7 @@
     return [self.sevenDayForecast objectAtIndex:index];
 }
 
+// This method will retreive the weather data for the given location
 - (void)loadLocation:(NSString*)location {
     
     _isLoading = YES;
@@ -57,7 +60,7 @@
     [self loadLocation:location];
 }
 
-
+// This method will load the json data from the loadLocation call
 - (void)loadWithJson:(NSString*)json {
     NSError *error = nil;
     NSData *data = [json dataUsingEncoding:NSUTF8StringEncoding];
@@ -94,6 +97,7 @@
     }
 }
 
+// this method is called if everything worked
 - (void)handleLoadSuccess {
     self.lastUpdated = [NSDate date];
     _isLoading = NO;
@@ -101,6 +105,7 @@
     [[NSNotificationCenter defaultCenter] postNotificationName:WEATHER_MODEL_CHANGED object:self];
 }
 
+// this method is called if something went wrong
 - (void)handleLoadFailureWithMessage:(NSString*)message {
     //self.sevenDayForecast = nil;
     _isLoading = NO;
