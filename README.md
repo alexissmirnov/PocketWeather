@@ -8,6 +8,8 @@ Pocket Weather is the like a Weather Hub for iPhone.
 
 Download the source code for Pocket Weather as a zip file [here](https://github.com/AppsAmuck/PocketWeather/archive/master.zip).
 
+[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/Q_e6dJART_M/0.jpg)](http://www.youtube.com/watch?v=Q_e6dJART_M)
+
 ![Pocket Weather](http://www.touchality.com/images/kickstarter/pocketweatherSmall01.png) . ![Pocket Weather](http://www.touchality.com/images/kickstarter/pocketweatherSmall05.png)
 
 ### The AppsAmuck Project
