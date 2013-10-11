@@ -80,11 +80,6 @@
             [self.loadingActivityIndicator stopAnimating];
         }
     }
-
-    [super observeValueForKeyPath:keyPath
-                         ofObject:object
-                           change:change
-                          context:context];
 }
 
 // this method will open the AppsAmuck web site
