@@ -15,7 +15,6 @@
 #import "NSDate+PWExtensions.h"
 
 @interface PWTodayViewController ()
-@property (nonatomic, weak) PWSettingsModel* settingsModel;
 @property (nonatomic, weak) PWWeatherModel* weatherModel;
 @property (weak, nonatomic) IBOutlet UIView *container;
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *loadingActivityIndicator;
@@ -27,24 +26,24 @@
 @property (weak, nonatomic) IBOutlet UILabel *conditionsLabel;
 @property (weak, nonatomic) IBOutlet UILabel *windLabel;
 @property (weak, nonatomic) IBOutlet UILabel *humidityLabel;
-@property (weak, nonatomic) IBOutlet UILabel *tempatureLabel;
-@property (weak, nonatomic) IBOutlet UILabel *tempatureLowLabel;
-@property (weak, nonatomic) IBOutlet UILabel *tempatureHighLabel;
+@property (weak, nonatomic) IBOutlet UILabel *temperatureLabel;  //temperature
+@property (weak, nonatomic) IBOutlet UILabel *temperatureLowLabel;
+@property (weak, nonatomic) IBOutlet UILabel *temperatureHighLabel;
 
-- (void)weatherChanged:(id)sender;
 - (void)styleControlsForDarkBackground;
+- (void)registerAsObserver;
+
 @end
 
 @implementation PWTodayViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-	
-    self.settingsModel = [PWSettingsModel sharedInstance];
+
     self.weatherModel = [PWWeatherModel sharedInstance];
-    [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(weatherChanged:)
-                                                 name:WEATHER_MODEL_CHANGED object:nil];
+    [self registerAsObserver];
+
     [self.weatherModel reloadSavedLocation];
     if(self.weatherModel.isLoading) {
         [self.loadingActivityIndicator startAnimating];
@@ -56,25 +55,47 @@
     [self.appsAmuck addGestureRecognizer:tapGestureRecognizer];
 }
 
+- (void)registerAsObserver
+{
+    /*
+     Register 'self' to receive change notifications for the "lastUpdated" property of
+     the 'weatherModel' object and specify that both the old and new values of "lastUpdated"
+     should be provided in the observe… method.
+     */
+    [self.weatherModel addObserver:self
+                        forKeyPath:@"lastUpdated"
+                           options:(NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld)
+                           context:nil];
+}
+
+- (void)observeValueForKeyPath:(NSString *)keyPath
+                      ofObject:(id)object
+                        change:(NSDictionary *)change
+                       context:(void *)context
+{
+
+    if ([keyPath isEqual:@"lastUpdated"]) {
+        [self updateControls];
+        if(!self.weatherModel.isLoading) {
+            [self.loadingActivityIndicator stopAnimating];
+        }
+    }
+
+    [super observeValueForKeyPath:keyPath
+                         ofObject:object
+                           change:change
+                          context:context];
+}
+
 // this method will open the AppsAmuck web site
 - (void)openWebSite
 {
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://www.appsamuck.com/"]];
 }
 
--(void)weatherChanged:(id)sender {
-    [self updateControls];
-    if(!self.weatherModel.isLoading) {
-        [self.loadingActivityIndicator stopAnimating];
-    }
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-}
-
 // updated the user interface controls
-- (void)updateControls {
+- (void)updateControls
+{
     if (!self.weatherModel.lastUpdated) {
         return;
     }
@@ -92,9 +113,9 @@
     self.backgroundImageView.image = [UIImage imageNamed:backgroundName];
     self.conditionImageView.image = [UIImage imageNamed:iconName];
     self.conditionsLabel.text = [[NSString stringWithFormat:@"%@", forecast.conditions.description] uppercaseString];
-    self.tempatureLabel.text = [NSString stringWithFormat:@"Temp: %@°F", forecast.temperature];
-    self.tempatureLowLabel.text = [NSString stringWithFormat:@"Low: %@°F", forecast.temperatureLow];
-    self.tempatureHighLabel.text = [NSString stringWithFormat:@"High: %@°F", forecast.temperatureHigh];
+    self.temperatureLabel.text = [NSString stringWithFormat:@"Temp: %@°F", forecast.temperature];
+    self.temperatureLowLabel.text = [NSString stringWithFormat:@"Low: %@°F", forecast.temperatureLow];
+    self.temperatureHighLabel.text = [NSString stringWithFormat:@"High: %@°F", forecast.temperatureHigh];
     self.windLabel.text = [NSString stringWithFormat:@"Wind: %@", forecast.wind];
     self.humidityLabel.text = [NSString stringWithFormat:@"Humidity: %@%%", forecast.humidity];
     [self.container setCornerRadius:3];
@@ -102,7 +123,8 @@
 }
 
 // it's night make sure we can read the text :D
-- (void)styleControlsForDarkBackground {
+- (void)styleControlsForDarkBackground
+{
     for (UILabel *label in [self.view subviewsWithClass:[UILabel class]]) {
         label.textColor = [UIColor whiteColor];
     }

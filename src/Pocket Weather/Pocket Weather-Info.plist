@@ -5,7 +5,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleDisplayName</key>
-	<string>${PRODUCT_NAME}</string>
+	<string>Pocket Wthr</string>
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleIcons</key>
@@ -14,13 +14,18 @@
 		<dict>
 			<key>CFBundleIconFiles</key>
 			<array>
+				<string>icon80</string>
+				<string>icon58</string>
+				<string>icon29</string>
+				<string>image120</string>
+				<string>Icon</string>
 				<string>Icon.png</string>
 				<string>Icon@2x.png</string>
 			</array>
 		</dict>
 	</dict>
 	<key>CFBundleIdentifier</key>
-	<string>com.AppsAmuck.${PRODUCT_NAME:rfc1034identifier}</string>
+	<string>com.appsamuck.${PRODUCT_NAME:rfc1034identifier}</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
