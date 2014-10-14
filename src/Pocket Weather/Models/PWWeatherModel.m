@@ -188,7 +188,7 @@
     }
     model.conditionCode = [dictionary[@"id"] integerValue];
     model.condition = dictionary[@"main"];
-    model.description = dictionary[@"description"];
+    model.weatherDescription = dictionary[@"description"];
     return model;
 }
 

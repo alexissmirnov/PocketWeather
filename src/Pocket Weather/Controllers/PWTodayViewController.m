@@ -107,7 +107,7 @@
     self.dateLabel.text = [[NSDate date] stringWithFormat:@"EE, MMM d"];
     self.backgroundImageView.image = [UIImage imageNamed:backgroundName];
     self.conditionImageView.image = [UIImage imageNamed:iconName];
-    self.conditionsLabel.text = [[NSString stringWithFormat:@"%@", forecast.conditions.description] uppercaseString];
+    self.conditionsLabel.text = [[NSString stringWithFormat:@"%@", forecast.conditions.weatherDescription] uppercaseString];
     self.temperatureLabel.text = [NSString stringWithFormat:@"Temp: %@°F", forecast.temperature];
     self.temperatureLowLabel.text = [NSString stringWithFormat:@"Low: %@°F", forecast.temperatureLow];
     self.temperatureHighLabel.text = [NSString stringWithFormat:@"High: %@°F", forecast.temperatureHigh];

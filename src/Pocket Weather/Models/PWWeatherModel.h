@@ -36,6 +36,6 @@
 @interface PWConditionModel : NSObject
 @property (assign, nonatomic) NSInteger conditionCode;
 @property (strong, nonatomic) NSString *condition;
-@property (strong, nonatomic) NSString *description;
+@property (strong, nonatomic) NSString *weatherDescription;
 + (instancetype)conditionModelFromDictionary:(NSDictionary*)dictionary;
 @end
